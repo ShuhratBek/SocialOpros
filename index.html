@@ -9,7 +9,7 @@
         <!-- Latest compiled and minified CSS -->
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/style.css">
-        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,500,100&subset=cyrillic,latin' rel='stylesheet' type='text/css'>
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
         <!--[if lt IE 9]>
@@ -22,17 +22,17 @@
             <div class="row">
                 <div class="col-sm-10 col-sm-offset-1 col-xs-12">
                     <div class="main">
+                        <!-- start Header -->
                         <div class="header">
                             <img class="logo img-responsive" src="img/logo.png" />
                             <div class="brand">
-                                <h1>Социальный опрос</h1>
+                                <h1>Социально-потребительский опрос</h1>
                                 <p>жителей Москвы и МО</p>
-                            </div>
-                            <div class="context">
-                                <p class="prize">Примите участие в опросе, и получите приз 5000 руб. от спонсора</p>
-                                <p class="comment">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</p>
+                                <h4 class="prize">Подарок 5000 руб. всем участникам опроса</h4>
                             </div>
                         </div>
+                        <!-- end Header -->
+                        <!-- start Content -->
                         <div class="content">
                             <div class="panel panel-default">
                                 <div class="panel-heading">
@@ -40,8 +40,9 @@
                                 </div>
                                 <div class="panel-body panel-tabs">
                                     <div class="tabs">
+                                        <!-- start Tabs -->
                                         <div class="list-group text-center">
-                                            <a href="#" class="list-group-item active">1</a>
+                                            <a class="list-group-item active">1</a>
                                             <a class="list-group-item">2</a>
                                             <a class="list-group-item">3</a>
                                             <a class="list-group-item">4</a>
@@ -52,127 +53,537 @@
                                             <a class="list-group-item">9</a>
                                             <a class="list-group-item">10</a>
                                         </div>
+                                        <!-- end Tabs -->
+                                        <!-- start Tab-panels -->
                                         <div class="tab-contents">
-                                            <div class="tab-content active" id="opros1">
-                                                <h3>Вопрос №1:</h3>
-                                                <p>Ваш возраст</p>
-                                                <div class="radio">
-                                                  <label>
-                                                    <input type="radio" name="Возраст" value="18-22">
-                                                    <span>18-22</span>
-                                                  </label>
+                                            <form action="" method="POST" class="form-horizontal">
+                                                <!-- Panel-1 -->
+                                                <div class="tab-content active nopass" id="opros1">
+                                                    <h3>Вопрос №1:</h3>
+                                                    <div class="row">
+                                                        <div class="col-sm-4">
+                                                            <h4>Ваш возраст</h4>
+                                                            <div class="radio">
+                                                              <label>
+                                                                <input type="radio" name="age" value="Меньше 18">
+                                                                <span>Меньше 18</span>
+                                                              </label>
+                                                            </div>
+                                                            <div class="radio">
+                                                              <label>
+                                                                <input type="radio" name="age" value="18-22">
+                                                                <span>18-22</span>
+                                                              </label>
+                                                            </div>
+                                                            <div class="radio">
+                                                              <label>
+                                                                <input type="radio" name="age" value="22-28">
+                                                                <span>22-28</span>
+                                                              </label>
+                                                            </div>
+                                                            <div class="radio">
+                                                              <label>
+                                                                <input type="radio" name="age" value="28-50">
+                                                                <span>28-50</span>
+                                                              </label>
+                                                            </div>
+                                                            <div class="radio">
+                                                              <label>
+                                                                <input type="radio" name="age" value="Более 50">
+                                                                <span>Более 50</span>
+                                                              </label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm-4">
+                                                            <h4>Ваш пол:</h4>
+                                                            <div class="radio">
+                                                              <label>
+                                                                <input type="radio" name="gender" value="Мужчина">
+                                                                <span>Мужчина</span>
+                                                              </label>
+                                                            </div>
+                                                            <div class="radio">
+                                                              <label>
+                                                                <input type="radio" name="gender" value="Женщина">
+                                                                <span>Женщина</span>
+                                                              </label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm-4">
+                                                            <h4>Где вы живете?</h4>
+                                                            <div class="radio">
+                                                              <label>
+                                                                <input type="radio" name="live" value="Москва">
+                                                                <span>Москва</span>
+                                                              </label>
+                                                            </div>
+                                                            <div class="radio">
+                                                              <label>
+                                                                <input type="radio" name="live" value="МО">
+                                                                <span>МО</span>
+                                                              </label>
+                                                            </div>
+                                                            <div class="radio">
+                                                              <label>
+                                                                <input type="radio" name="live" value="Другое">
+                                                                <span>Другое</span>
+                                                              </label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm-12 text-center">
+                                                            <a class="btn btn-primary disabled" id="next2">Ответить</a>
+                                                        </div>
+                                                    </div>
                                                 </div>
-                                                <div class="radio">
-                                                  <label>
-                                                    <input type="radio" name="Возраст" value="22-28">
-                                                    <span>22-28</span>
-                                                  </label>
+                                                <!-- Panel-2 -->
+                                                <div class="tab-content pass" id="opros2">
+                                                    <h3>Вопрос №2:</h3>
+                                                    <h4>Сколько человек живет в вашей квартире?</h4>
+                                                    <div class="radio">
+                                                      <label>
+                                                        <input type="radio" name="person" value="1">
+                                                        <span>1</span>
+                                                      </label>
+                                                    </div>
+                                                    <div class="radio">
+                                                      <label>
+                                                        <input type="radio" name="person" value="2">
+                                                        <span>2</span>
+                                                      </label>
+                                                    </div>
+                                                    <div class="radio">
+                                                      <label>
+                                                        <input type="radio" name="person" value="3">
+                                                        <span>3</span>
+                                                      </label>
+                                                    </div>
+                                                    <div class="radio">
+                                                      <label>
+                                                        <input type="radio" name="person" value="4">
+                                                        <span>4</span>
+                                                      </label>
+                                                    </div>
+                                                    <div class="radio">
+                                                      <label>
+                                                        <input type="radio" name="person" value="5">
+                                                        <span>5</span>
+                                                      </label>
+                                                    </div>
+                                                    <div class="radio">
+                                                      <label>
+                                                        <input type="radio" name="person" value="Больше 5-ти">
+                                                        <span>Больше 5-ти</span>
+                                                      </label>
+                                                    </div>
                                                 </div>
-                                                <div class="radio">
-                                                  <label>
-                                                    <input type="radio" name="Возраст" value="28-50">
-                                                    <span>28-50</span>
-                                                  </label>
+                                                <!-- Panel-3 -->
+                                                <div class="tab-content pass" id="opros3">
+                                                    <h3>Вопрос №3:</h3>
+                                                    <h4>Сколько раз в месяц вы ходите за едой?</h4>
+                                                    <div class="radio">
+                                                      <label>
+                                                        <input type="radio" name="for_food" value="0-2">
+                                                        <span>0-2</span>
+                                                      </label>
+                                                    </div>
+                                                    <div class="radio">
+                                                      <label>
+                                                        <input type="radio" name="for_food" value="3-5">
+                                                        <span>3-5</span>
+                                                      </label>
+                                                    </div>
+                                                    <div class="radio">
+                                                      <label>
+                                                        <input type="radio" name="for_food" value="5-10">
+                                                        <span>5-10</span>
+                                                      </label>
+                                                    </div>
+                                                    <div class="radio">
+                                                      <label>
+                                                        <input type="radio" name="for_food" value="10-15">
+                                                        <span>10-15</span>
+                                                      </label>
+                                                    </div>
+                                                    <div class="radio">
+                                                      <label>
+                                                        <input type="radio" name="for_food" value="Больше 15">
+                                                        <span>Больше 15</span>
+                                                      </label>
+                                                    </div>
                                                 </div>
-                                                <div class="radio">
-                                                  <label>
-                                                    <input type="radio" name="Возраст" value="50-65">
-                                                    <span>50-65</span>
-                                                  </label>
+                                                <!-- Panel-4 -->
+                                                <div class="tab-content pass" id="opros4">
+                                                    <h3>Вопрос №4:</h3>
+                                                    <h4>Где вы обычно покупаете продукты питания:</h4>
+                                                    <div class="radio">
+                                                      <label>
+                                                        <input type="radio" name="where_buy" value="Небольшой магазин у дома">
+                                                        <span>Небольшой магазин у дома</span>
+                                                      </label>
+                                                    </div>
+                                                    <div class="radio">
+                                                      <label>
+                                                        <input type="radio" name="where_buy" value="Рынок">
+                                                        <span>Рынок</span>
+                                                      </label>
+                                                    </div>
+                                                    <div class="radio">
+                                                      <label>
+                                                        <input type="radio" name="where_buy" value="Супер-маркет">
+                                                        <span>Супер-маркет</span>
+                                                      </label>
+                                                    </div>
+                                                    <div class="radio">
+                                                      <label>
+                                                        <input type="radio" name="where_buy" value="Ферма">
+                                                        <span>Ферма</span>
+                                                      </label>
+                                                    </div>
+                                                    <div class="radio">
+                                                      <label>
+                                                        <input type="radio" name="where_buy" value="Другой">
+                                                        <span>Другой</span>
+                                                      </label>
+                                                    </div>
                                                 </div>
-                                                <div class="radio">
-                                                  <label>
-                                                    <input type="radio" name="Возраст" value="Другой">
-                                                    <span>Другой</span>
-                                                  </label>
+                                                <!-- Panel-5 -->
+                                                <div class="tab-content pass" id="opros5">
+                                                    <h3>Вопрос №5:</h3>
+                                                    <h4>Какую марку напитков вы предпочитаете:</h4>
+                                                    <div class="radio">
+                                                      <label>
+                                                        <input type="radio" name="choose_drink" value="Coca Cola">
+                                                        <span>Coca Cola</span>
+                                                      </label>
+                                                    </div>
+                                                    <div class="radio">
+                                                      <label>
+                                                        <input type="radio" name="choose_drink" value="Pepsi">
+                                                        <span>Pepsi</span>
+                                                      </label>
+                                                    </div>
+                                                    <div class="radio">
+                                                      <label>
+                                                        <input type="radio" name="choose_drink" value="Fanta">
+                                                        <span>Fanta</span>
+                                                      </label>
+                                                    </div>
+                                                    <div class="radio">
+                                                      <label>
+                                                        <input type="radio" name="choose_drink" value="Merinda">
+                                                        <span>Merinda</span>
+                                                      </label>
+                                                    </div>
+                                                    <div class="radio">
+                                                      <label>
+                                                        <input type="radio" name="choose_drink" value="Sprite">
+                                                        <span>Sprite</span>
+                                                      </label>
+                                                    </div>
+                                                    <div class="radio">
+                                                      <label>
+                                                        <input type="radio" name="choose_drink" value="7UP">
+                                                        <span>7UP</span>
+                                                      </label>
+                                                    </div>
+                                                    <div class="radio">
+                                                      <label>
+                                                        <input type="radio" name="choose_drink" value="J7">
+                                                        <span>J7</span>
+                                                      </label>
+                                                    </div>
+                                                    <div class="radio">
+                                                      <label>
+                                                        <input type="radio" name="choose_drink" value="Морс">
+                                                        <span>Морс</span>
+                                                      </label>
+                                                    </div>
+                                                    <div class="radio">
+                                                      <label>
+                                                        <input type="radio" name="choose_drink" value="Холодный чай">
+                                                        <span>Холодный чай</span>
+                                                      </label>
+                                                    </div>
+                                                    <div class="radio">
+                                                      <label>
+                                                        <input type="radio" name="choose_drink" value="Минералку">
+                                                        <span>Минералку</span>
+                                                      </label>
+                                                    </div>
+                                                    <div class="radio">
+                                                      <label>
+                                                        <input type="radio" name="choose_drink" value="Другое">
+                                                        <span>Другое</span>
+                                                      </label>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                            <div class="tab-content" id="opros2">
-                                                <h3>Вопрос №2:</h3>
-                                                <p>Укажите ваш пол</p>
-                                                <div class="radio">
-                                                  <label>
-                                                    <input type="radio" name="Пол" value="Мужчина">
-                                                    <span>Мужчина</span>
-                                                  </label>
+                                                <!-- Panel-6 -->
+                                                <div class="tab-content pass" id="opros6">
+                                                    <h3>Вопрос №6:</h3>
+                                                    <h4>Какую марку молока вы выберете:</h4>
+                                                    <div class="radio">
+                                                      <label>
+                                                        <input type="radio" name="choose_milk" value="Домик в деревне">
+                                                        <span>Домик в деревне</span>
+                                                      </label>
+                                                    </div>
+                                                    <div class="radio">
+                                                      <label>
+                                                        <input type="radio" name="choose_milk" value="Вкуснотеево">
+                                                        <span>Вкуснотеево</span>
+                                                      </label>
+                                                    </div>
+                                                    <div class="radio">
+                                                      <label>
+                                                        <input type="radio" name="choose_milk" value="Простоквашино">
+                                                        <span>Простоквашино</span>
+                                                      </label>
+                                                    </div>
+                                                    <div class="radio">
+                                                      <label>
+                                                        <input type="radio" name="choose_milk" value="Лианозовское">
+                                                        <span>Лианозовское</span>
+                                                      </label>
+                                                    </div>
+                                                    <div class="radio">
+                                                      <label>
+                                                        <input type="radio" name="choose_milk" value="Брест">
+                                                        <span>Брест</span>
+                                                      </label>
+                                                    </div>
+                                                    <div class="radio">
+                                                      <label>
+                                                        <input type="radio" name="choose_milk" value="Другое">
+                                                        <span>Другое</span>
+                                                      </label>
+                                                    </div>
                                                 </div>
-                                                <div class="radio">
-                                                  <label>
-                                                    <input type="radio" name="Пол" value="Женщина">
-                                                    <span>Женщина</span>
-                                                  </label>
+                                                <!-- Panel-7 -->
+                                                <div class="tab-content pass" id="opros7">
+                                                    <h3>Вопрос №7:</h3>
+                                                    <h4>Как далеко от вашего дома находится ближайший магазин?</h4>
+                                                    <div class="radio">
+                                                      <label>
+                                                        <input type="radio" name="store_distance" value="50-100м">
+                                                        <span>50-100м</span>
+                                                      </label>
+                                                    </div>
+                                                    <div class="radio">
+                                                      <label>
+                                                        <input type="radio" name="store_distance" value="100-200м">
+                                                        <span>100-200м</span>
+                                                      </label>
+                                                    </div>
+                                                    <div class="radio">
+                                                      <label>
+                                                        <input type="radio" name="store_distance" value="200-500м">
+                                                        <span>200-500м</span>
+                                                      </label>
+                                                    </div>
+                                                    <div class="radio">
+                                                      <label>
+                                                        <input type="radio" name="store_distance" value="Больше 500м">
+                                                        <span>Больше 500м</span>
+                                                      </label>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                            <div class="tab-content" id="opros3">
-                                                <h3>Вопрос №3:</h3>
-                                                <p>Сколько человек живет в вашей квартире:</p>
-                                                <div class="radio">
-                                                  <label>
-                                                    <input type="radio" name="Возраст" value="1">
-                                                    <span>1</span>
-                                                  </label>
+                                                <!-- Panel-8 -->
+                                                <div class="tab-content pass" id="opros8">
+                                                    <h3>Вопрос №8:</h3>
+                                                    <h4>Какой шоколад вы предпочитаете:</h4>
+                                                    <div class="radio">
+                                                      <label>
+                                                        <input type="radio" name="choose_chocolate" value="Риттерспорт">
+                                                        <span>Риттерспорт</span>
+                                                      </label>
+                                                    </div>
+                                                    <div class="radio">
+                                                      <label>
+                                                        <input type="radio" name="choose_chocolate" value="Аленка">
+                                                        <span>Аленка</span>
+                                                      </label>
+                                                    </div>
+                                                    <div class="radio">
+                                                      <label>
+                                                        <input type="radio" name="choose_chocolate" value="Бабаевский">
+                                                        <span>Бабаевский</span>
+                                                      </label>
+                                                    </div>
+                                                    <div class="radio">
+                                                      <label>
+                                                        <input type="radio" name="choose_chocolate" value="Сникерс">
+                                                        <span>Сникерс</span>
+                                                      </label>
+                                                    </div>
+                                                    <div class="radio">
+                                                      <label>
+                                                        <input type="radio" name="choose_chocolate" value="Марс">
+                                                        <span>Марс</span>
+                                                      </label>
+                                                    </div>
+                                                    <div class="radio">
+                                                      <label>
+                                                        <input type="radio" name="choose_chocolate" value="Твикс">
+                                                        <span>Твикс</span>
+                                                      </label>
+                                                    </div>
+                                                    <div class="radio">
+                                                      <label>
+                                                        <input type="radio" name="choose_chocolate" value="Пикник">
+                                                        <span>Пикник</span>
+                                                      </label>
+                                                    </div>
+                                                    <div class="radio">
+                                                      <label>
+                                                        <input type="radio" name="choose_chocolate" value="Другое">
+                                                        <span>Другое</span>
+                                                      </label>
+                                                    </div>
                                                 </div>
-                                                <div class="radio">
-                                                  <label>
-                                                    <input type="radio" name="Возраст" value="2">
-                                                    <span>2</span>
-                                                  </label>
+                                                <!-- Panel-9 -->
+                                                <div class="tab-content pass" id="opros9">
+                                                    <h3>Вопрос №9:</h3>
+                                                    <h4>Какую марку кофе вы предпочитаете?</h4>
+                                                    <div class="radio">
+                                                      <label>
+                                                        <input type="radio" name="choose_coffee" value="Нескафе">
+                                                        <span>Нескафе</span>
+                                                      </label>
+                                                    </div>
+                                                    <div class="radio">
+                                                      <label>
+                                                        <input type="radio" name="choose_coffee" value="Амбассадор">
+                                                        <span>Амбассадор</span>
+                                                      </label>
+                                                    </div>
+                                                    <div class="radio">
+                                                      <label>
+                                                        <input type="radio" name="choose_coffee" value="Якобс">
+                                                        <span>Якобс</span>
+                                                      </label>
+                                                    </div>
+                                                    <div class="radio">
+                                                      <label>
+                                                        <input type="radio" name="choose_coffee" value="Чибо">
+                                                        <span>Чибо</span>
+                                                      </label>
+                                                    </div>
+                                                    <div class="radio">
+                                                      <label>
+                                                        <input type="radio" name="choose_coffee" value="Черная карта">
+                                                        <span>Черная карта</span>
+                                                      </label>
+                                                    </div>
+                                                    <div class="radio">
+                                                      <label>
+                                                        <input type="radio" name="choose_coffee" value="Другое">
+                                                        <span>Другое</span>
+                                                      </label>
+                                                    </div>
                                                 </div>
-                                                <div class="radio">
-                                                  <label>
-                                                    <input type="radio" name="Возраст" value="3">
-                                                    <span>3</span>
-                                                  </label>
+                                                <!-- Panel-10 -->
+                                                <div class="tab-content pass" id="opros10">
+                                                    <h3>Вопрос №10:</h3>
+                                                    <h4>На каком транспорте вы чаще всего передвигаетесь:</h4>
+                                                    <div class="radio">
+                                                      <label>
+                                                        <input type="radio" name="choose_transport" value="Трамвай">
+                                                        <span>Трамвай</span>
+                                                      </label>
+                                                    </div>
+                                                    <div class="radio">
+                                                      <label>
+                                                        <input type="radio" name="choose_transport" value="Троллейбус">
+                                                        <span>Троллейбус</span>
+                                                      </label>
+                                                    </div>
+                                                    <div class="radio">
+                                                      <label>
+                                                        <input type="radio" name="choose_transport" value="Метро">
+                                                        <span>Метро</span>
+                                                      </label>
+                                                    </div>
+                                                    <div class="radio">
+                                                      <label>
+                                                        <input type="radio" name="choose_transport" value="Такси">
+                                                        <span>Такси</span>
+                                                      </label>
+                                                    </div>
+                                                    <div class="radio">
+                                                      <label>
+                                                        <input type="radio" name="choose_transport" value="Собственная машина">
+                                                        <span>Собственная машина</span>
+                                                      </label>
+                                                    </div>
+                                                    <div class="radio">
+                                                      <label>
+                                                        <input type="radio" name="choose_transport" value="Вертолет">
+                                                        <span>Вертолет</span>
+                                                      </label>
+                                                    </div>
+                                                    <div class="radio">
+                                                      <label>
+                                                        <input type="radio" name="choose_transport" value="Другое">
+                                                        <span>Другое</span>
+                                                      </label>
+                                                    </div>
                                                 </div>
-                                                <div class="radio">
-                                                  <label>
-                                                    <input type="radio" name="Возраст" value="4">
-                                                    <span>4</span>
-                                                  </label>
+                                                <!-- Panel- -->
+                                                <div class="tab-content" id="prize-panel">
+                                                    <h2>Спасибо что вы приняли участие в нашем соцопросе.</h2>
+                                                    <p>В благодарность хотим вручить подарок от нашего спонсора.</p>
+                                                    <p>Сертификат на сумму 5000 руб., которым Вы сможете воспользоваться в сети женских салонов красоты L’amorage.</p>
+                                                    <div class="row">
+                                                        <div class="col-sm-6 get-prize">
+                                                            <p>Получить сертификат на</p>
+                                                            <h2>5000 <small>руб.</small></h2>
+                                                            <div class="form-group">
+                                                                <input class="form-control" type="text" name="fio" data-validation="required" data-validation-error-msg="Введите ваше имя" placeholder="ФИО">
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <input class="form-control" type="tel" name="phone" data-validation="required" data-validation-error-msg="Введите номер телефона" placeholder="Телефон">
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <button type="submit" class="btn btn-warning btn-block">Получить сертификат</button>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm-6 prize-img">
+                                                            <img src="img/prize.jpg" class="img-responsive">
+                                                        </div>
+                                                    </div>
+                                                    <div class="row social">
+                                                        <div class="col-sm-7">
+                                                            <h4>Помогите нам увеличить аудиторию опроса</h4>
+                                                            <p>опросите своих друзей пройти соцопрос или поделитесь об этом в социальных сетях:</p>
+                                                        </div>
+                                                        <div class="col-sm-5">
+                                                            <img class="pull-left" src="img/arrow.png" />
+                                                            <script type="text/javascript">(function() {
+                                                            if (window.pluso)if (typeof window.pluso.start == "function") return;
+                                                            if (window.ifpluso==undefined) { window.ifpluso = 1;
+                                                            var d = document, s = d.createElement('script'), g = 'getElementsByTagName';
+                                                            s.type = 'text/javascript'; s.charset='UTF-8'; s.async = true;
+                                                            s.src = ('https:' == window.location.protocol ? 'https' : 'http')  + '://share.pluso.ru/pluso-like.js';
+                                                            var h=d[g]('body')[0];
+                                                            h.appendChild(s);
+                                                            }})();</script>
+                                                            <div class="pluso" data-background="transparent" data-options="medium,round,line,horizontal,nocounter,theme=04" data-services="vkontakte,odnoklassniki,facebook,twitter,google,moimir,email"></div>
+                                                        </div>
+                                                    </div>
                                                 </div>
-                                                <div class="radio">
-                                                  <label>
-                                                    <input type="radio" name="Возраст" value="5">
-                                                    <span>5</span>
-                                                  </label>
-                                                </div>
-                                                <div class="radio">
-                                                  <label>
-                                                    <input type="radio" name="Возраст" value="больше 5">
-                                                    <span>больше 5</span>
-                                                  </label>
-                                                </div>
-                                            </div>
-                                            <div class="tab-content" id="opros4">
-                                                
-                                            </div>
-                                            <div class="tab-content" id="opros5">
-                                                
-                                            </div>
-                                            <div class="tab-content" id="opros6">
-                                                
-                                            </div>
-                                            <div class="tab-content" id="opros7">
-                                                
-                                            </div>
-                                            <div class="tab-content" id="opros8">
-                                                
-                                            </div>
-                                            <div class="tab-content" id="opros9">
-                                                
-                                            </div>
-                                            <div class="tab-content" id="opros10">
-                                                
-                                            </div>
+                                            </form>
                                         </div>
+                                        <!-- end Tab-panels -->
                                     </div>
-                                    
-                                    
                                 </div>
+                            </div>
+                            <div class="verified">
+                                <img src="img/verify.png">защита конфиденциальности информации
                             </div>
                         </div>
                         <div class="footer">
-                            <img src="img/logo.png" width="50px" />
+                            <img src="img/logo.png" class="pull-left" width="50px" />
+                                <span>copyright © 2014</span><br/><span>Все права защищены</span>
                         </div>
                     </div>
                 </div>
@@ -182,17 +593,9 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <!-- Latest compiled and minified JavaScript -->
         <script src="js/bootstrap.min.js"></script>
-        <script>
-        $(document).ready(function() {
-    $(".list-group>a").click(function(e) {
-        e.preventDefault();
-        $(this).siblings('a.active').removeClass("active");
-        $(this).addClass("active");
-        var index = $(this).index();
-        $(".tab-content").removeClass("active");
-        $(".tab-content").eq(index).addClass("active");
-    });
-});
-        </script>
+        <script src="js/jquery.form-validator.min.js"></script>
+        <script src="js/jquery.maskedinput.min.js"></script>
+        <script src="js/mask.js"></script>
+        <script src="js/main.js"></script>
     </body>
 </html>

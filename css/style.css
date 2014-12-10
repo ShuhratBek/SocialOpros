@@ -3,28 +3,31 @@ html{
     background: -o-linear-gradient(#bbdde8, #366372); /* For Opera 11.1 to 12.0 */
     background: -moz-linear-gradient(#bbdde8, #366372); /* For Firefox 3.6 to 15 */
     background: linear-gradient(#bbdde8, #366372); /* Standard syntax (must be last) */
-    height: 100%;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 body{
     padding: 50px 0;
     background: transparent;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 h1,h2,h3,h4{
-    font-weight: 600;
+    font-weight: 500;
 }
 .main{
     padding: 0;
     margin: 0;
+    border: 1px solid #1f416b;
+    box-shadow: 0px 0px 5px 1px rgba(43,43,43,.75);
 }
 .header{
     background: url(../img/header_bg.jpg) top left no-repeat #649ee5;
     min-height: 140px;
-    padding: 30px 20px;
+    padding: 15px 20px;
 }
 .header .logo{
     float: left;
+    margin-left: 30px;
+    margin-top: 20px;
 }
 .header .brand{
     display: inline-block;
@@ -38,19 +41,14 @@ h1,h2,h3,h4{
 }
 .header .brand p{
     font-size: 18px;
+    font-weight: 300;
 }
-.header .context{
-    display: inline-block;
-    float: right;
-    text-align: right;
-    padding-top: 20px;
-}
-.header .context p{
-    margin: 0;
+.header .brand .prize{
+    color: #ffd249;
 }
 .content{
     background: url(../img/content_bg.png) repeat;
-    padding: 50px;
+    padding: 50px 50px 20px;
 }
 .content .panel{
   background-color: #ffffff;
@@ -61,6 +59,13 @@ h1,h2,h3,h4{
   -moz-box-shadow: 0 6px 12px rgba(0,0,0,.175);
   opacity: 0.97;
   filter: alpha(opacity=97);
+}
+.content .panel-heading{
+    padding: 15px;
+}
+.content .panel-title{
+    font-size: 24px;
+    font-weight: 400;
 }
 .content .panel-tabs{
     padding: 0;
@@ -74,7 +79,11 @@ h1,h2,h3,h4{
     display: inline-block;
     margin: 0;
     font-size: 18px;
-    font-weight: 600;
+    font-weight: 500;
+}
+.list-group-item{
+    font-weight: 400;
+    font-size: 18px;
 }
 .list-group-item:first-child {
     border-top-left-radius: 0;
@@ -115,6 +124,99 @@ a.list-group-item:hover, a.list-group-item:focus {
 .tab-contents .tab-content.active{
     display: block;
 }
+.tab-contents .tab-content h3{
+    margin-top: 0;
+    font-weight: 400;
+}
+
+.tab-contents .tab-content h4{
+    margin-top: 20px;
+    font-weight: 400;
+}
+#next2{
+    padding: 8px 90px;
+    font-size: 18px;
+    margin-top: 20px;
+}
+.verified{
+    color: #899cab;
+    padding: 5px 0;
+}
+.verified img{
+    margin-right: 10px;
+}
+#prize-panel{
+    text-align: center;
+}
+#prize-panel h2{
+    margin-top: 0;
+    text-transform: uppercase;
+    font-size: 24px;
+}
+#prize-panel p{
+    margin: 0;
+}
+#prize-panel .get-prize p{
+    color: #e86340;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 0;
+    margin-top: 10px;
+}
+#prize-panel .get-prize h2{
+    color: #e86340;
+    font-size: 60px;
+    margin-top: 0;
+}
+#prize-panel .get-prize small{
+    color: #e86340;
+    text-transform: none;
+}
+#prize-panel .form-group{
+    padding: 0 10px 14px;
+    margin: 0;
+}
+#prize-panel .form-control{
+    text-align: center;
+    height: 40px;
+}
+#prize-panel button[type=submit]{
+    height: 40px;
+    background-color: #e86340;
+}
+#prize-panel .prize-img{
+    padding: 20px 10px;
+}
+#prize-panel .prize-img img{
+    border-radius: 4px;
+}
+.social{
+    text-align: left;
+    margin-right: -30px;
+    margin-left: -30px;
+    border-top: 1px solid #ddd;
+    margin-top: 10px;
+    padding: 15px 25px 0;
+}
+.social h4{
+    text-transform: uppercase;
+    margin-bottom: 0;
+    margin-top: 10px !important;
+    font-size: 16px;
+}
+.social p{
+    font-weight: 300;
+    line-height: 1;
+}
+.pluso{
+    float: right;
+    margin-top: 10px;
+}
 .footer{
     background-color: #1f416b;
+    padding: 20px 35px;
+    color: #000;
+}
+.footer img{
+    margin-right: 15px;
 }
