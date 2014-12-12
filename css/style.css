@@ -189,6 +189,8 @@ a.list-group-item:hover, a.list-group-item:focus {
 }
 #prize-panel .prize-img img{
     border-radius: 4px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .social{
     text-align: left;
@@ -211,6 +213,53 @@ a.list-group-item:hover, a.list-group-item:focus {
 .pluso{
     float: right;
     margin-top: 10px;
+}
+.progress-panel{
+    display: none;
+}
+.progress-panel .progress{
+    margin-bottom: 0;
+}
+.newsletter{
+    padding: 0 30px;
+}
+.newsletter h2{
+    text-transform: uppercase;
+    font-size: 24px;
+}
+.newsletter p{
+    font-size: 18px;
+    font-weight: 300;
+}
+.newsletter h3{
+    text-align: center;
+    font-size: 36px;
+    color: #e86340;
+    margin-bottom: 0;
+    margin-top: 40px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.newsletter h3+p{
+    font-size: 24px;
+    text-align: center;
+    font-weight: 300;
+}
+.newsletter form{
+    margin-bottom: 20px;
+}
+.newsletter .form-control{
+    text-align: center;
+    min-height: 40px;
+}
+.newsletter .btn{
+    min-height: 40px;
+    background-color: #e86340;
+    border-color: #e86340;
+}
+.newsletter .social{
+    margin-left: -45px;
+    margin-right: -45px;
 }
 .footer{
     background-color: #1f416b;

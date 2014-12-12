@@ -1,0 +1,177 @@
+@media (max-width: 480px) {
+    body{
+        padding:0;
+    }
+    .header{
+        text-align: center;
+    }
+    .header .logo {
+        float: none;
+        margin-left: auto;
+        margin-top: 0px;
+        margin-right: auto;
+    }
+    .main{
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+    .content {
+        padding: 20px 10px 10px;
+    }
+    .content .tabs .list-group{
+        display: none;
+    }
+    .content .tabs .tab-contents{
+        width: 100%;
+    }
+    .content .panel-title,
+    .tab-contents .tab-content h3{
+        font-size: 18px;
+    }
+    .content .panel-heading {
+        padding: 10px;
+    }
+    .content .tabs .tab-contents{
+        padding: 20px 10px;
+    }
+    .pass, .nopass{
+        margin: 10px;
+    }
+    .nopass .col-xs-4{
+        display: block;
+        width: 100%;
+    }
+    .progress-panel{
+        background-color: #fcfcfc;
+        border-bottom: 1px solid #ddd;
+        margin: 0;
+        padding: 20px 10px;
+        display: block;
+    }
+    #prize-panel h2{
+        font-size: 18px;
+    }
+    #prize-panel .prize-img {
+        padding: 20px 20px;
+    }
+    .social{
+        margin-right: -10px;
+        margin-left: -10px;
+        padding: 5px;
+    }
+    .social .arrow{
+        display: none;
+    }
+    #next2{
+        width: 100%;
+        padding: 8px 30px;
+    }
+    .verified span{
+        font-size: 12px;
+    }
+    .newsletter{
+        padding:0;
+    }
+    .newsletter h2{
+        font-size: 18px;
+        text-align: center;
+    }
+    .newsletter p {
+        font-size: 14px;
+    }
+    .newsletter h3 {
+        font-size: 30px;
+        margin-top: 20px;
+    }
+    .newsletter h3+p {
+        font-size: 18px;
+    }
+    .newsletter .social {
+        text-align: left;
+        border-top: 1px solid #ddd;
+        margin-top: 10px;
+        padding: 15px 0px 0;
+        margin-right: -15px;
+        margin-left: -15px;
+    }
+    .pluso{
+        float: none !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+    .footer {
+        padding: 20px 10px;
+    }
+}
+@media (min-width: 481px) and (max-width:767px) {
+    body{
+        padding:0;
+    }
+    body > .container{
+        padding-left:0;
+        padding-right:0;
+    }
+    .header{
+        text-align: center;
+    }
+    .header .logo {
+        float: none;
+        margin-left: auto;
+        margin-top: 0px;
+        margin-right: auto;
+    }
+    .content {
+        padding: 20px 10px 10px;
+    }
+    .content .tabs .list-group{
+        display: none;
+    }
+    .content .tabs .tab-contents{
+        width: 100%;
+    }
+    .content .panel-title,
+    .tab-contents .tab-content h3{
+        font-size: 18px;
+    }
+    .content .panel-heading {
+        padding: 10px;
+    }
+    .content .tabs .tab-contents{
+        padding: 20px 10px;
+    }
+    .pass, .nopass{
+        margin: 10px;
+    }
+    .progress-panel{
+        background-color: #fcfcfc;
+        border-bottom: 1px solid #ddd;
+        margin: 0;
+        padding: 20px 10px;
+        display: block;
+    }
+    #prize-panel h2{
+        font-size: 18px;
+    }
+    #prize-panel .prize-img {
+        padding: 20px 20px;
+    }
+    .social .arrow{
+        display: none;
+    }
+    #next2{
+        width: 100%;
+    }
+    .verified span{
+        font-size: 12px;
+    }
+    .footer {
+        padding: 20px 10px;
+    }
+    .pluso{
+        text-align: center !important;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        float: none;
+    }
+}
