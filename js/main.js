@@ -24,6 +24,7 @@ $(document).ready(function() {
         } else {
             $('.list-group-item').eq(index).removeClass('active');
             $('.list-group').hide();
+            $('.social').show();
             $(".tab-content").eq(index).removeClass("active");
             $('#prize-panel').addClass('active');
             $('.tab-contents').css('width','100%');

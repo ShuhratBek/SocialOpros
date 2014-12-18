@@ -3,20 +3,34 @@
         padding:0;
     }
     .header{
-        text-align: center;
+        padding: 0 0 10px;
     }
     .header .logo {
-        float: none;
+        float: left;
         margin-left: auto;
         margin-top: 0px;
-        margin-right: auto;
+        margin-right: 10px;
+    }
+    .header .brand h1 {
+        font-size: 18px;
+    }
+    .header .brand h4{
+        text-align: center;
+        font-size: 14px;
+    }
+    .header .brand p {
+        font-size: 14px;
+    }
+    .header .brand .prize{
+        margin-bottom: 0;
+        font-size: 13px;
     }
     .main{
         margin-left: -15px;
         margin-right: -15px;
     }
     .content {
-        padding: 20px 10px 10px;
+        padding: 0;
     }
     .content .tabs .list-group{
         display: none;
@@ -26,13 +40,20 @@
     }
     .content .panel-title,
     .tab-contents .tab-content h3{
-        font-size: 18px;
+        font-size: 13px;
     }
     .content .panel-heading {
         padding: 10px;
     }
     .content .tabs .tab-contents{
-        padding: 20px 10px;
+        padding: 10px;
+    }
+    .tab-contents .tab-content h4 {
+        margin-top: 20px;
+    }
+    .content .panel {
+        border-radius: 0;
+        -moz-border-radius: 0;
     }
     .pass, .nopass{
         margin: 10px;
@@ -43,10 +64,14 @@
     }
     .progress-panel{
         background-color: #fcfcfc;
-        border-bottom: 1px solid #ddd;
+        border-bottom: none;
         margin: 0;
-        padding: 20px 10px;
+        padding: 0;
         display: block;
+    }
+    .progress-panel .progress {
+        height: 5px;
+        border-radius: 0;
     }
     #prize-panel h2{
         font-size: 18px;
@@ -80,7 +105,7 @@
         font-size: 14px;
     }
     .newsletter h3 {
-        font-size: 30px;
+        font-size: 30px !important;
         margin-top: 20px;
     }
     .newsletter h3+p {
@@ -101,6 +126,9 @@
     }
     .footer {
         padding: 20px 10px;
+    }
+    .verified {
+        padding: 5px 10px;
     }
 }
 @media (min-width: 481px) and (max-width:767px) {
